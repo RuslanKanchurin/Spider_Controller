@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/wifi_image"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/bluetooth_image"
+        android:background="@drawable/wifi"
+        android:scaleType="fitXY"
+        android:src="@drawable/wifi" />
+
+    <ImageButton
+        android:id="@+id/bluetooth_image"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bluetooth"
+        android:scaleType="fitXY"
+        android:src="@drawable/bluetooth" />
+
+    <TextView
+        android:id="@+id/isConnected_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@id/wifi_image"    />
+
+    <ImageButton
+        android:id="@+id/levo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/levo"
+        android:scaleType="fitXY"
+        android:src="@drawable/levo"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/vniz"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/levo"
+        android:background="@drawable/vniz"
+        android:scaleType="fitXY"
+        android:src="@drawable/vniz"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/pravo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/vniz"
+        android:background="@drawable/pravo"
+        android:scaleType="fitXY"
+        android:src="@drawable/pravo"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/verh"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_above="@id/vniz"
+        android:layout_alignLeft="@id/vniz"
+        android:background="@drawable/verh"
+        android:scaleType="fitXY"
+        android:src="@drawable/verh"
+        tools:ignore="SpeakableTextPresentCheck" />
+    <Button
+        android:id="@+id/hand_wave"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/hand_wave"/>
+    <Button
+        android:id="@+id/hand_shake"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/hand_wave"
+        android:layout_alignParentRight="true"
+        android:text="@string/hand_shake"/>
+    <Button
+        android:id="@+id/dance"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/hand_shake"
+        android:layout_alignParentRight="true"
+        android:text="@string/dance"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:minHeight="48dp"
+        android:text="I/O"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:theme="@style/MySwitch" />
+
+
+</RelativeLayout>
